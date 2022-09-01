@@ -1,0 +1,205 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* == Variable CSS === */
+:root {
+  --header-height: 3rem;
+
+  /* == COLORS == */
+  /* == Color Mode : HSL */
+  --hue: 0%;
+  --sat: 0%;
+  --title-color: hsl(0, var(--sat), 30%);
+  --title-color-dark: hsl(0, var(--sat), 0%);
+  --text-color: hsl(0, var(--sat), 46%);
+  --body-color: hsl(0, var(--sat), 98%);
+  --container-color: #fff;
+
+  /* == Font and typography == */
+  --body-font: 'Poppins', sans-serif;
+
+  --fs-big: 3.5rem;
+  --fs-h1: 2.25rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.25rem;
+  --fs-normal: 1rem;
+  --fs-small: 0.875rem;
+  --fs-smaller: 0.813rem;
+  --fs-tiny: 0.625rem;
+
+  /* == Font Weight == */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+
+  /* == Margins Bottom == */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* == Z-index == */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* === RESPONSIVE TYPOGRAPHY === */
+@media screen and (max-width:992px) {
+  :root {
+    --fs-big: 2.75rem;
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.25rem;
+    --fs-h3: 1rem;
+    --fs-normal: 0.938rem;
+    --fs-small: 0.813rem;
+    --fs-smaller: 0.75rem;
+
+  }
+}
+
+/* ============ BASE ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--fs-normal);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--fw-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============ RE-USABLE CLASSES ===== */
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--fs-h1);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--fs-small);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* ============ LAYOUT ================ */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ============ BUTTONS =============== */
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--fw-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ============ BREAKPOINTS =========== */
+/* For Larger Devices */
+@media screen and (max-width:992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For Medium Devices */
+@media screen and (max-width:768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
+}
+
+@media screen and (max-width:576px) {}
+
+/* For Small Screen */
+@media screen and (max-width:350px) {
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
