@@ -36,7 +36,7 @@ const Contact = () => {
                 className="contact__button"
               >
                 Write me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon  "></i>
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
