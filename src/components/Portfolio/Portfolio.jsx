@@ -13,22 +13,23 @@ const Portfolio = () => {
         {projects.map(
           ({ id, image, title, description, tags, source, visit }) => (
             <div className="portfolio__content" key={id}>
-              <img src={image} />
+              <img className="portfolio__img" src={image} />
               <div className="portfolio__title">{title}</div>
               <div className="portfolio__subtitle">{description}</div>
-              <div className="portfolio__stack">Stack</div>
               <div className="portfolio__tags">
                 {tags.map((tag, i) => (
-                  <div className="portfolio__tag">{tag}</div>
+                  <div className="portfolio__tag" key={i}>
+                    {tag}
+                  </div>
                 ))}
               </div>
               <div className="portfolio__links">
-                <a href={visit} className="portfolio__link">
+                <button href={visit} className="button__flex portfolio__link">
                   Code
-                </a>
-                <a href={source} className="portfolio__link">
+                </button>
+                <button href={source} className="button__flex  portfolio__link">
                   Live
-                </a>
+                </button>
               </div>
             </div>
           )

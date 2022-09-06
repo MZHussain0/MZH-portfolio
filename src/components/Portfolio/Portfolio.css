@@ -1,4 +1,97 @@
 .portfolio__container {
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
 }
+
+.portfolio__content {
+  display: grid;
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.portfolio__content:hover {
+  transform: translateY(-5px);
+  background-color: rgb(234, 234, 234);
+}
+
+.portfolio__title {
+  text-align: center;
+  color: var(--title-color);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  padding: var(--mb-1) 0;
+}
+
+.portfolio__subtitle {
+  font-size: var(--fs-small);
+  padding: var(--mb-0-75);
+}
+
+.portfolio__tags {
+  display: flex;
+  justify-content: center;
+  padding: var(--mb-1);
+  column-gap: 0.5rem;
+  overflow: hidden;
+}
+
+.portfolio__tag {
+  display: flex;
+  align-items: center;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  font-size: var(--fs-smaller);
+  padding: 0 1rem;
+  border-radius: 0.2rem;
+}
+
+.portfolio__links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  column-gap: 1rem;
+}
+
+.portfolio__link {
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 0.3rem 2.5rem;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.portfolio__link:hover {
+  background-color: var(--title-color-dark);
+}
+
+/* ============ BREAKPOINTS =========== */
+/* For Larger Devices */
+@media screen and (max-width:992px) {}
+
+/* For Medium Devices */
+@media screen and (max-width:768px) {
+
+  .portfolio__content {
+    padding: 0 auto;
+  }
+
+
+}
+
+@media screen and (max-width:576px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    row-gap: 3rem;
+    margin: 0 auto;
+  }
+
+  .portfolio__content {
+    padding: 0 auto;
+  }
+}
+
+/* For Small Screen */
+@media screen and (max-width:350px) {}
