@@ -53,7 +53,7 @@ const Qualification = () => {
                   Post Graduation - Machine Design
                 </h3>
                 <span className="qualification__subtitle">
-                  Vtu Regional Center - Kalaburagi
+                  VTU Regional Center - Kalaburagi
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2014 - 2017
@@ -85,39 +85,6 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">FreeLancer</h3>
-                <span className="qualification__subtitle">WFH</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">Backend Developer</h3>
-                <span className="qualification__subtitle">
-                  Montaigne Smart Business Solutions - Hyderabad
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018- 2020
-                </div>
-              </div>
-            </div>
           </div>
 
           <div
@@ -130,12 +97,10 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Product Designer</h3>
-                <span className="qualification__subtitle">
-                  Microsoft - India
-                </span>
+                <h3 className="qualification__title">Freelancer</h3>
+                <span className="qualification__subtitle">WFH</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2014 - 2017
+                  <i className="uil uil-calendar-alt"></i> 2020 - present
                 </div>
               </div>
 
@@ -153,20 +118,29 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">UX Designer</h3>
-                <span className="qualification__subtitle">Apple - Spain</span>
+                <h3 className="qualification__title">
+                  Backend Developer <br />
+                  (Intern)
+                </h3>
+                <span className="qualification__subtitle">
+                  Mountaigne Smart Business Solutions - Hyderabad(India)
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2010 - 2014
+                  <i className="uil uil-calendar-alt"></i> 2019 - 2020 <br />
+                  (8 months)
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Designer</h3>
-                <span className="qualification__subtitle">Figma</span>
+                <h3 className="qualification__title">Machine Design Engg</h3>
+                <span className="qualification__subtitle">
+                  BAIL India Pvt Ltd
+                </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - Present
+                  <i className="uil uil-calendar-alt"></i> 2018 - 2019 <br /> (6
+                  months)
                 </div>
               </div>
 

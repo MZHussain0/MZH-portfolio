@@ -9,11 +9,13 @@ const Portfolio = () => {
       <h2 className="section__title">Creative Portfolio</h2>
       <span className="section__subtitle">Proof of my skills</span>
 
-      <div className="portfolio__container container grid">
+      <article className="portfolio__container container grid">
         {projects.map(
           ({ id, image, title, description, tags, source, visit }) => (
-            <div className="portfolio__content" key={id}>
-              <img className="portfolio__img" src={image} />
+            <div className="portfolio__items" key={id}>
+              <div className="portfolio__img">
+                <img src={image} />
+              </div>
               <div className="portfolio__title">{title}</div>
               <div className="portfolio__subtitle">{description}</div>
               <div className="portfolio__tags">
@@ -24,17 +26,25 @@ const Portfolio = () => {
                 ))}
               </div>
               <div className="portfolio__links">
-                <button href={visit} className="button__flex portfolio__link">
-                  Code
-                </button>
-                <button href={source} className="button__flex  portfolio__link">
-                  Live
-                </button>
+                <a
+                  href={visit}
+                  target="_blank"
+                  className="button__flex portfolio__link button-glow portfolio__link-border"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={source}
+                  target="_blank"
+                  className="button__flex  portfolio__link "
+                >
+                  Live Demo
+                </a>
               </div>
             </div>
           )
         )}
-      </div>
+      </article>
     </section>
   );
 };
