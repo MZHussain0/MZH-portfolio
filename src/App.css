@@ -7,13 +7,15 @@
 
   /* == COLORS == */
   /* == Color Mode : HSL */
-  --hue: 0%;
-  --sat: 0%;
-  --title-color: hsl(0, var(--sat), 30%);
-  --title-color-dark: hsl(0, var(--sat), 0%);
-  --text-color: hsl(0, var(--sat), 46%);
-  --body-color: hsl(0, var(--sat), 98%);
+  --hue: 50;
+  --sat: 100%;
+  --title-color: hsl(50, 100%, 50%);
+  --title-color-dark: hsl(50, 100%, 100%);
+  --text-color: hsl(50, 100%, 46%);
+  --body-color: hsl(50, 100%, 98%);
   --container-color: #fff;
+  --primary-color: #022c43;
+  --primary-color-dark: #022c40;
 
   /* == Font and typography == */
   --body-font: 'Poppins', sans-serif;
@@ -82,8 +84,8 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--container-color);
 }
 
 h1,
@@ -148,25 +150,73 @@ img {
 /* ============ BUTTONS =============== */
 .button {
   display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
+  background-color: transparent;
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--fw-medium);
+  transition: 0.3s;
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--title-color);
+  color: var(--primary-color);
+}
+
+.button:hover .button__icon {
+  fill: #022c43;
+  animation: none;
+  transition: all 0.3s;
 }
 
 .button__icon {
   margin-left: var(--mb-0-5);
+  animation: wave-animation 8s ease-in-out infinite;
+
 }
 
 .button__flex {
   display: inline-flex;
   align-items: center;
 }
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(5.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-4.0deg)
+  }
+
+  30% {
+    transform: rotate(8.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(4.0deg)
+  }
+
+  60% {
+    transform: rotate(2.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
 
 /* ============ BREAKPOINTS =========== */
 /* For Larger Devices */

@@ -16,14 +16,15 @@
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--title-color);
+  transition: 0.3s;
+
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
-  transform: translateY(-1px);
-  transition: 0.3s;
+  transform: translateY(-3px);
 }
 
 .home__title {
@@ -35,7 +36,47 @@
   height: 38px;
   width: 38px;
   margin-left: 0.4rem;
+  /* transform-origin: 90% 70%; */
+  animation: hand__animate 3s ease-in-out infinite 2s;
 }
+
+@keyframes hand__animate {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-15.0deg)
+  }
+
+  30% {
+    transform: rotate(20.0deg)
+  }
+
+  40% {
+    transform: rotate(-8.0deg)
+  }
+
+  50% {
+    transform: rotate(14.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+
+}
+
 
 .home__subtitle {
   font-size: var(--fs-h3);
@@ -50,7 +91,7 @@
   position: absolute;
   width: 70px;
   height: 2px;
-  background-color: var(--text-color);
+  background-color: var(--title-color-dark);
   left: 0;
   top: 1rem;
 }
@@ -65,7 +106,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 0.3);
+  box-shadow: inset 0 0 0 9px hsla(50 100% 50% / 0.3);
   order: 1;
   justify-self: center;
   height: 300px;
@@ -106,7 +147,7 @@
 }
 
 .home__scroll-name {
-  color: var(--title-color);
+  color: var(--title-color-dark);
   font-weight: var(--fw-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;

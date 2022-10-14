@@ -123,7 +123,7 @@ const Qualification = () => {
                   (Intern)
                 </h3>
                 <span className="qualification__subtitle">
-                  Mountaigne Smart Business Solutions - Hyderabad(India)
+                  MSBS - Hyderabad
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2019 - 2020 <br />

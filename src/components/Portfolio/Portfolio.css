@@ -101,7 +101,7 @@
     grid-template-columns: 1fr;
     padding: 0;
     row-gap: 2rem;
-    margin: 0 auto;
+    margin: 2rem
   }
 
   .portfolio__items {
