@@ -9,7 +9,7 @@ export const projects = [
     description:
       "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
     image: p1,
-    tags: ["Mongo", "Express", "React", "Node"],
+    tags: "Mongo, Express, React",
     source: "https://google.com",
     visit: "https://google.com",
     id: 0,
@@ -19,7 +19,7 @@ export const projects = [
     description:
       "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
     image: p2,
-    tags: ["React", "JavaScript"],
+    tags: "React, JavaScript",
     source: "https://google.com",
     visit: "https://google.com",
     id: 1,
@@ -29,7 +29,7 @@ export const projects = [
     description:
       "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
     image: p3,
-    tags: ["React", "WebRTC"],
+    tags: "React, WebRTC",
     source: "https://google.com",
     visit: "https://google.com",
     id: 2,
@@ -39,7 +39,7 @@ export const projects = [
     description:
       "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
     image: p4,
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: "React, ChatEngine, Firebase",
     source: "https://google.com",
     visit: "https://google.com",
     id: 3,
