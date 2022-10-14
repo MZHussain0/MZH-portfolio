@@ -30,6 +30,10 @@
 .contact__card:hover {
   border: 2px solid var(--title-color);
   transform: translateY(-3px);
+  box-shadow: 0px 1px 2px 0px rgba(255, 247, 0, 0.7),
+    1px 2px 4px 0px rgba(255, 247, 0, 0.5),
+    2px 4px 8px 0px rgba(255, 247, 0, 0.5),
+    2px 4px 16px 0px rgba(255, 247, 0, 0.1);
 }
 
 .contact__card-icon {
