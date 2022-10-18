@@ -32,7 +32,7 @@
   margin-bottom: var(--mb-0-25);
 }
 
-.home__title img {
+.home__title svg {
   width: 3.2rem;
   margin-bottom: -0.7rem;
 }
