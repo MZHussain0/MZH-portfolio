@@ -12,14 +12,14 @@ const PortfolioItem = ({ item }) => {
       </h5>
       <div className="portfolio__links">
         <a
-          href={item.visit}
+          href={item.source}
           target="_blank"
           className="button__flex portfolio__link"
         >
           Code <i className="bx bxl-github portfolio__icon"></i>
         </a>
         <a
-          href={item.source}
+          href={item.visit}
           target="_blank"
           className="button__flex  portfolio__link "
         >

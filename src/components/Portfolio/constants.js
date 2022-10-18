@@ -1,47 +1,36 @@
-import p1 from "../../assets/work1.jpg";
-import p2 from "../../assets/work2.jpg";
-import p3 from "../../assets/work3.jpg";
-import p4 from "../../assets/work4.jpg";
+import instafud from "../../assets/brave_1tCI7NE0Jp.png";
+import pfolio from "../../assets/brave_OmzlGKK1Ag.png";
+import todo from "../../assets/brave_XYMiVwxqof.png";
 
 export const projects = [
   {
-    title: "MERN Memories",
+    title: "InstaFood App",
     description:
-      "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
-    image: p1,
-    tags: "Mongo, Express, React",
-    source: "https://google.com",
-    visit: "https://google.com",
+      "A simple yet interactive Food app with updating cart functionality along the adding and removing item from the cart along with total price update.",
+    image: instafud,
+    tags: "React, React Hooks",
+    source: "https://github.com/MZHussain0/food-order-app",
+    visit: "https://instafud.netlify.app/",
     id: 0,
   },
   {
-    title: "E-Commerce",
+    title: "HyperTodo",
     description:
-      "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
-    image: p2,
-    tags: "React, JavaScript",
-    source: "https://google.com",
-    visit: "https://google.com",
+      "A simple yet sleek designed todo app. It has featuring of editing task ,deleting task, completed task along with dark/ligth theme. It also has a feature to dynamically change the accent colors of the app based on color slider",
+    image: todo,
+    tags: "React, tailwindcss, scss",
+    source: "https://github.com/MZHussain0/HyperTodo",
+    visit: "https://hypedtodo.netlify.app",
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Portfolio",
     description:
-      "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
-    image: p3,
-    tags: "React, WebRTC",
-    source: "https://google.com",
-    visit: "https://google.com",
+      "Beautifully designed portfolio app with lots of animations and neon color accents. ",
+    image: pfolio,
+    tags: "React, vanilla css",
+    source: "https://github.com/MZHussain0/MZH-portfolio",
+    visit: "https://zakirhussain.netlify.app/",
     id: 2,
-  },
-  {
-    title: "Unichat",
-    description:
-      "Laborum officia qui fugiat veniam voluptate. Id magna culpa minim laborum aliquip ut laboris occaecat sit. Nulla adipisicing eu Lorem non laboris id incididunt.",
-    image: p4,
-    tags: "React, ChatEngine, Firebase",
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 3,
   },
 ];

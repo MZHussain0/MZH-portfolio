@@ -32,6 +32,7 @@ const Contact = () => {
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">mzhussain092@gmail.com</span>
               <a
+                target="_blank"
                 href="mailto:mzhussain092@gmail.com"
                 className="contact__button"
               >
@@ -45,6 +46,7 @@ const Contact = () => {
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">+91 93800 30355</span>
               <a
+                target="_blank"
                 href="https://api.whatsapp.com/send?phone=9380030355&text=Hello, more information!"
                 className="contact__button"
               >
@@ -57,7 +59,11 @@ const Contact = () => {
               <i className="bx bxl-messenger contact__card-icon"></i>
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">fb.com-editlater</span>
-              <a href="https://m.me/editlater" className="contact__button">
+              <a
+                target="_blank"
+                href="https://m.me/editlater"
+                className="contact__button"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>

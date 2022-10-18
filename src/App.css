@@ -176,7 +176,7 @@ img {
 
 .button__icon {
   margin-left: var(--mb-0-5);
-  animation: wave-animation 8s ease-in-out infinite;
+  animation: wave-animation 1.5s alternate-reverse infinite;
 
 }
 
@@ -187,37 +187,17 @@ img {
 
 @keyframes wave-animation {
   0% {
-    transform: rotate(0.0deg)
+    transform: scale()
   }
 
-  10% {
-    transform: rotate(5.0deg)
-  }
 
-  /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-4.0deg)
-  }
-
-  30% {
-    transform: rotate(8.0deg)
-  }
-
-  40% {
-    transform: rotate(-4.0deg)
-  }
 
   50% {
-    transform: rotate(4.0deg)
+    transform: scale(1.08)
   }
 
-  60% {
-    transform: rotate(2.0deg)
-  }
-
-  /* Reset for the last half to pause */
   100% {
-    transform: rotate(0.0deg)
+    transform: scale(1)
   }
 }
 

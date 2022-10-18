@@ -10,6 +10,7 @@
   border-radius: 1.5rem;
   transition: 0.3s;
   border: 2px solid var(--title-color);
+  position: relative;
 }
 
 .portfolio__items:hover {
@@ -59,6 +60,7 @@
   justify-content: center;
   margin-bottom: var(--mb-1);
   gap: 1rem;
+
 }
 
 .portfolio__link {

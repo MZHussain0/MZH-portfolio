@@ -4,7 +4,11 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        M.Z. Hussain
+        M.
+        <span>
+          <img src="/src/assets/zn-S.svg" alt="Z" />
+        </span>
+        . Hussain
         <svg
           width="36"
           height="36"
