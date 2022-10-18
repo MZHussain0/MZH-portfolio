@@ -107,7 +107,7 @@
 }
 
 .home__img {
-  background: url("../../assets/IMG1a.png");
+  background: url("../../assets/IMG1b.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -116,6 +116,7 @@
   justify-self: center;
   height: 300px;
   width: 300px;
+  filter: brightness(0.5);
   animation: profile__animate 8s ease-in-out infinite 2s;
 }
 
